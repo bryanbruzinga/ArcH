@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color:#C2A12F;
+    --secondary-color:#947135 ;
+    --subtitle: #BDBCBC;
+    --text:#6D6D6D;
+    --random: #FFCD04;
+}
