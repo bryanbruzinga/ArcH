@@ -5,44 +5,65 @@ import { ReactComponent as Report } from "../Assets/report.svg";
 import { ReactComponent as Content } from "../Assets/content.svg";
 import { ReactComponent as Event } from "../Assets/events.svg";
 import { ReactComponent as Service } from "../Assets/services.svg";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+  const [painelRecuado, setpainelRecuado] = React.useState(false);
+
+  function handleOpenPanel() {
+    setpainelRecuado(!painelRecuado);
+    document.querySelector("nav").style.width = "250px";
+  }
+
+  function handleClosePanel() {
+    setpainelRecuado(!painelRecuado);
+    document.querySelector("nav").style.width = "0";
+  }
+
   return (
     <aside className={styles.sidebar}>
       <nav className={styles.nav}>
         <ul>
           <li className={styles.listItem}>
             <User />
-            <button>
+            <Link to="/pagina">
               <p>Manutenção de usuários</p>
-            </button>
+            </Link>
           </li>
           <li className={styles.listItem}>
             <Report />
-            <button>
+            <a href="/">
               <p>Relatorios administrativos</p>
-            </button>
+            </a>
           </li>
           <li className={styles.listItem}>
             <Content />
-            <button>
+            <a href="/">
               <p>Manutenção de conteúdos</p>
-            </button>
+            </a>
           </li>
           <li className={styles.listItem}>
             <Event />
-            <button>
+            <a href="/">
               <p>Manutenção de eventos</p>
-            </button>
+            </a>
           </li>
           <li className={styles.listItem}>
             <Service />
-            <button>
+            <a href="/">
               <p>Manutenção de serviços</p>
-            </button>
+            </a>
           </li>
         </ul>
+        <button onClick={handleClosePanel} className={styles.panelOpen}>
+          🠔
+        </button>
       </nav>
+      {painelRecuado && (
+        <button onClick={handleOpenPanel} className={styles.panelClosed}>
+          ➔
+        </button>
+      )}
     </aside>
   );
 };

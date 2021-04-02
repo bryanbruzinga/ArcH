@@ -1,6 +1,7 @@
 .sidebar {
     width: 100px;
     height: 100vh;
+    position: relative;
 }
 .nav {
     background: rgba(255,255,255, .8);
@@ -11,6 +12,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
+    transition: .3s;
+    position: relative;
 }
 
 .listItem {
@@ -28,26 +31,51 @@
     margin: 1.5rem 0;
 }
 
-.listItem button {
-    background: none;
-    cursor: pointer;
-    transition: .3s;
-    border: none;
-}
-
 .listItem p {
-    color: black;
+    color: #333;
     text-align: center;
     font-size: 0.875rem;
     font-family: var(--font-primary);
 }
 
-.sidebar button:hover {
-    transform: scale(1.1);
+.sidebar a p {
+    transition: .3s;
+}
+
+.sidebar a p:hover {
+    color: var(--primary-color);
 }
 
 .sidebar svg {
     height: 25px;
     width: 25px;
     margin-bottom: .5rem;
+}
+
+.panelOpen,
+.panelClosed {
+    background: var(--primary-color);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.panelOpen:hover,
+.panelClosed:hover {
+    background: var(--secondary-color);
+}
+
+.panelOpen {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.panelClosed {
+    position: absolute;
+    left: 20px;
+    top: 10px;
 }

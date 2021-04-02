@@ -1,13 +1,21 @@
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
+import User from "./Components/User";
+import "./global.css";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Body />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Body>
+          <Route path="pagina" element={<User />} />
+        </Body>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
