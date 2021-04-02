@@ -32,10 +32,16 @@ input {
 
 .notification,
 .logout {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     background: none;
     border: none;
     margin: 0 1rem;
     cursor: pointer;
+}
+
+.notification svg,
+.logout svg {
+    height: 20px;
+    width: 20px;
 }

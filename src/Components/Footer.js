@@ -11,17 +11,24 @@ const Footer = () => {
       <div className={styles.contact}>
         <div className={styles.contactItem}>
           <Phone />
-          <p>(11) 2844-2272</p>
+          <p>
+            <a href="tel:+551128442272">(11) 2844-2272</a>
+          </p>
         </div>
         <div className={styles.contactItem}>
           <Email />
-          <p>contato@archoffice.tech </p>
+
+          <p>
+            <a href="mailto:contato@archoffice.tech">contato@archoffice.tech</a>
+          </p>
         </div>
         <div className={styles.contactItem}>
           <Address />
           <p>
-            Av. Marcos Penteado de Ulhoa Rodrigues, 939 Torre Jacarandá - 8°
-            andar - Sala 835 - Tamboré Barueri - SP, 06460-040
+            <a href="https://g.page/Castelo-Branco-Office-Park-4425?share">
+              Av. Marcos Penteado de Ulhoa Rodrigues, 939 Torre Jacarandá - 8°
+              andar - Sala 835 - Tamboré Barueri - SP
+            </a>
           </p>
         </div>
       </div>

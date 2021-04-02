@@ -1,22 +1,15 @@
+.mainContainer:before {
+    content: '';
+    background: url('../Assets/bg.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    filter: brightness(50%);
+    z-index: -1;
+}
 .mainContainer {
-    display: flex;
+    height: 90vh;
+    display: grid;
     align-items: center;
-    justify-content: center;
-}
-
-.mainContainer button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.mainContainer button:hover {
-    transform: scale(1.1);
-}
-
-.mainContainer svg {
-    height: 100px;
-    width: 100px;
-    margin: 2rem;
 }

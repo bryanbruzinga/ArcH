@@ -1,13 +1,18 @@
 .footer {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(180deg, rgba(216,10,10,1) 0%, rgba(121,0,0,1) 89%);
 }
 
 .footer h2 {
     margin-bottom: 1.5rem;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
 }
 
 .contact {
@@ -17,14 +22,17 @@
 
 .contactItem {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
+}
+.contactItem p a{
+    color: white;
+    font-family: var(--font-primary);
 }
 
 .contactItem svg {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
