@@ -13,11 +13,13 @@ const Sidebar = () => {
   function handleOpenPanel() {
     setpainelRecuado(!painelRecuado);
     document.querySelector("nav").style.width = "250px";
+    document.querySelector("nav").style.zIndex = "0";
   }
 
   function handleClosePanel() {
     setpainelRecuado(!painelRecuado);
     document.querySelector("nav").style.width = "0";
+    document.querySelector("nav").style.zIndex = "-2";
   }
 
   return (

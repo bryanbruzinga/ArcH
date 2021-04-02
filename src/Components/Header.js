@@ -4,11 +4,14 @@ import Logo from "../Assets/logo.png";
 import { ReactComponent as LogOut } from "../Assets/logout.svg";
 import { ReactComponent as Notification } from "../Assets/notification.svg";
 import { ReactComponent as Search } from "../Assets/search.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <img src={Logo} alt="ArchOffice" />
+      <Link to="/">
+        <img src={Logo} alt="ArchOffice" />
+      </Link>
       <div className={styles.searchBar}>
         <label htmlFor="Search">
           <button className={styles.search}>

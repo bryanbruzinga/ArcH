@@ -36,3 +36,12 @@
     width: 30px;
 }
 
+@media (max-width: 640px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contactItem {
+        margin-bottom: 1.3rem;
+    }
+}
+
