@@ -1,5 +1,26 @@
 .container {
     height: 90vh;
     width: 100%;
-    background: rgba(255, 255, 255, .7);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+}
+
+.userHeader {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1/3;
+}
+
+.userHeader h1{
+    color: white;
+}
+
+.userHeader p{
+    font-family: var(--font-primary);
+    text-align: center;
+}
+
+.card {
+    grid-column: 2/3;
 }

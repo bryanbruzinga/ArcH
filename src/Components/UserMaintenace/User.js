@@ -6,9 +6,13 @@ import UserText from "./UserText";
 const User = () => {
   return (
     <div className={styles.container}>
-      <h1>Manutenção do Usuário</h1>
-      <UserText />
-      <Dropdown />
+      <header className={styles.userHeader}>
+        <h1>Manutenção do Usuário</h1>
+        <Dropdown />
+      </header>
+      <div className={styles.card}>
+        <UserText />
+      </div>
     </div>
   );
 };

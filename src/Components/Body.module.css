@@ -10,7 +10,5 @@
 }
 .mainContainer {
     height: 90vh;
-    display: grid;
-    grid-template-columns: minmax(250px, 1fr) 5fr;
-    align-items: start;
+    display: flex;
 }
