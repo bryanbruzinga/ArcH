@@ -23,9 +23,8 @@ a {
 :root {
     --primary-color:#C2A12F;
     --secondary-color:#947135 ;
-    --other: #9CA3DB;
+    --background: #EAEDF1;
     --text:#141301;
-    --background: #4F345A;
     --font-primary: 'Roboto', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
 }

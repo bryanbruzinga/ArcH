@@ -1,12 +1,11 @@
 .sidebar {
-    width: 100px;
     height: 100vh;
     position: relative;
 }
 .nav {
-    background: rgba(255,255,255, .8);
+    background: white;
     box-shadow: 15px 0px 20px -10px rgba(0,0,0,0.5);
-    height: 90vh;
+    height: 89vh;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@
 }
 
 .listItem {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--text);
 }
 
 .listItem:last-child {
@@ -29,6 +28,10 @@
     align-items: center;
     justify-content: flex-start;
     margin: 1.5rem 0;
+}
+
+.listItem a {
+    margin-left: .5rem;
 }
 
 .listItem p {

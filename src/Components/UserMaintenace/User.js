@@ -7,10 +7,13 @@ const User = () => {
   return (
     <div className={styles.container}>
       <header className={styles.userHeader}>
-        <h1>Manutenção do Usuário</h1>
+        <div className={styles.titles}>
+          <h1>Manutenção do Usuário</h1>
+          <h2>Olá usuário, Bem Vindo!</h2>
+        </div>
         <Dropdown />
       </header>
-      <div className={styles.card}>
+      <div className={styles.cardText}>
         <UserText />
       </div>
     </div>
