@@ -26,7 +26,7 @@ const Dropdown = () => {
   return (
     <div className={styles.dropdown}>
       <button onClick={handleDropdown} className={styles.btnDropdown}>
-        Opções 🔽
+        Opções ᐁ
       </button>
       <div className={styles.dropdownContent}>
         {enableMenu &&

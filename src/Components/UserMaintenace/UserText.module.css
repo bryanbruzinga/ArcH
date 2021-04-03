@@ -26,3 +26,13 @@
     font-family: var(--font-primary);
     padding: 1rem 0;
 }
+
+@media (max-width: 640px) {
+    .card {
+        width: 80vw;
+        margin: 1rem 0;
+    }
+    .text p {
+        max-width: 300px;
+    }
+}

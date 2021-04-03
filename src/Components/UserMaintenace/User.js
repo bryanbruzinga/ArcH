@@ -1,20 +1,16 @@
 import React from "react";
-import Dropdown from "../Dropdown/Dropdown";
 import styles from "./User.module.css";
+import UserHeader from "./UserHeader";
 import UserText from "./UserText";
 
 const User = () => {
   return (
     <div className={styles.container}>
-      <header className={styles.userHeader}>
-        <div className={styles.titles}>
-          <h1>Manutenção do Usuário</h1>
-          <h2>Olá usuário, Bem Vindo!</h2>
+      <UserHeader />
+      <div className={styles.cardContainer}>
+        <div className={styles.cardText}>
+          <UserText />
         </div>
-        <Dropdown />
-      </header>
-      <div className={styles.cardText}>
-        <UserText />
       </div>
     </div>
   );

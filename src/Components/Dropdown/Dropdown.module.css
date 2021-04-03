@@ -41,3 +41,9 @@
   .dropdownContent a:hover {
     color: var(--secondary-color);
   }
+
+  @media (max-width: 640px) {
+    .dropdown {
+      margin-bottom: 2rem;
+    }
+  }

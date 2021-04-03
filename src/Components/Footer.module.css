@@ -9,8 +9,8 @@
 
 .footer h2 {
     margin-bottom: 1.5rem;
-    border-bottom: 3px solid white;
-    color: white;
+    border-bottom: 3px solid var(--primary-color);
+    color: var(--primary-color);
     font-family: var(--font-secondary);
     font-size: 1.5rem;
 }
@@ -28,12 +28,14 @@
 }
 .contactItem p a{
     color: white;
+    margin-left: .5rem;
     font-family: var(--font-primary);
 }
 
 .contactItem svg {
     height: 30px;
     width: 30px;
+    fill: var(--primary-color);
 }
 
 @media (max-width: 640px) {
