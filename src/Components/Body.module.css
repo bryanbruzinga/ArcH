@@ -11,5 +11,6 @@
 .mainContainer {
     height: 90vh;
     display: grid;
-    align-items: center;
+    grid-template-columns: minmax(250px, 1fr) 5fr;
+    align-items: start;
 }

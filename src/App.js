@@ -3,7 +3,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import User from "./Components/User";
+import User from "./Components/UserMaintenace/User";
+
 import "./global.css";
 
 function App() {
