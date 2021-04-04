@@ -39,7 +39,7 @@ const GridCrud = () => {
   ];
 
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div style={{ height: 370, width: "100%" }}>
       <DataGrid
         rows={itensRow}
         columns={itensColumns}

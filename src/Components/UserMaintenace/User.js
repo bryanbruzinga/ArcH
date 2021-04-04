@@ -10,19 +10,23 @@ const User = () => {
     <div className={styles.container}>
       <UserHeader />
       <div className={styles.crudBodyContainer}>
-        <h2>Manutenção do Usuário</h2>
-        <Dropdown />
-        <UserText />
+        <div className={styles.crudHeader}>
+          <h2>Manutenção do Usuário</h2>
+          <UserText />
+          <Dropdown />
+        </div>
         <GridCrud />
         <div className={styles.btnActions}>
-          <button className={styles.btnView}>Vizualizar</button>
-          <button className={styles.btnEdit}>Editar</button>
-          <button className={styles.btnDelete}>Excluir</button>
+          <div className={styles.btnControl}>
+            <button>Salvar</button>
+            <button>Cancelar</button>
+          </div>
+          <div className={styles.btnCrud}>
+            <button className={styles.btnView}>Vizualizar</button>
+            <button className={styles.btnEdit}>Editar</button>
+            <button className={styles.btnDelete}>Excluir</button>
+          </div>
         </div>
-      </div>
-      <div className={styles.btnControl}>
-        <button>Salvar</button>
-        <button>Cancelar</button>
       </div>
     </div>
   );

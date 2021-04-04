@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Dropdown.module.css";
 
 const Dropdown = () => {
@@ -31,9 +32,9 @@ const Dropdown = () => {
       <div className={styles.dropdownContent}>
         {enableMenu &&
           opcoes.map((item) => (
-            <a key={item.value} href="/">
+            <Link key={item.value} href="/">
               {item.label}
-            </a>
+            </Link>
           ))}
       </div>
     </div>

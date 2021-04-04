@@ -1,10 +1,4 @@
 .mainContainer {
-    height: 89vh;
+    height: 100%;
     display: flex;
-}
-
-@media (max-width: 640px) {
-    .mainContainer {
-        height: 100%;
-    }
 }

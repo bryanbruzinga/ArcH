@@ -19,9 +19,8 @@ export default function UserText() {
       <div>
         <TextField
           id="standard-textarea"
-          label="Placeholder"
-          placeholder="Placeholder"
-          multiline
+          label="Consulta"
+          placeholder="Consultar banco"
         />
       </div>
     </form>

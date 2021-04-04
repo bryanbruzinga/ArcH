@@ -1,6 +1,6 @@
 .userHeader {
     display: flex;
-    padding-left: 3rem;
+    padding: 2rem 0 2rem 4rem;
     align-items: center;
     background: url('../../Assets/bg.jpg') no-repeat center center;
     background-size: cover;
