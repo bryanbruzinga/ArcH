@@ -2,3 +2,9 @@
     height: 89vh;
     display: flex;
 }
+
+@media (max-width: 640px) {
+    .mainContainer {
+        height: 100%;
+    }
+}

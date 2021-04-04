@@ -1,26 +1,29 @@
 import React from "react";
-import styles from "./UserText.module.css";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
 
-const UserText = () => {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "& .MuiTextField-root": {
+      margin: theme.spacing(1),
+      width: "15rem",
+    },
+  },
+}));
+
+export default function UserText() {
+  const classes = useStyles();
+
   return (
-    <div className={styles.card}>
-      <div className={styles.titleText}>
-        <h2>Opção 1</h2>
+    <form className={classes.root} noValidate autoComplete="off">
+      <div>
+        <TextField
+          id="standard-textarea"
+          label="Placeholder"
+          placeholder="Placeholder"
+          multiline
+        />
       </div>
-      <div className={styles.text}>
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias excepturi sint occaecati cupiditate non provident,
-          similique sunt in culpa qui officia deserunt mollitia animi, id est
-          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-          omnis voluptas assumenda est, omnis dolor repellendus.
-        </p>
-      </div>
-    </div>
+    </form>
   );
-};
-
-export default UserText;
+}

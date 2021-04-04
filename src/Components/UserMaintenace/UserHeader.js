@@ -1,5 +1,4 @@
 import React from "react";
-import Dropdown from "../Dropdown/Dropdown";
 import styles from "./UserHeader.module.css";
 
 const UserHeader = () => {
@@ -9,7 +8,6 @@ const UserHeader = () => {
         <h1>Manutenção do Usuário</h1>
         <h2>Olá usuário, Bem Vindo!</h2>
       </div>
-      <Dropdown />
     </header>
   );
 };
