@@ -12,7 +12,7 @@ const User = () => {
       <UserHeader />
       <div className={styles.crudBodyContainer}>
         <div className={styles.crudHeader}>
-          <h2>Manutenção do Usuário</h2>
+          <h2>Manutenção de Usuários</h2>
           <UserText />
           <Dropdown />
         </div>

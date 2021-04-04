@@ -29,7 +29,7 @@ const Sidebar = () => {
           <li className={styles.listItem}>
             <User />
             <Link to="/pagina">
-              <p>Manutenção de usuários</p>
+              <p className={styles.active}>Manutenção de usuários</p>
             </Link>
           </li>
           <li className={styles.listItem}>

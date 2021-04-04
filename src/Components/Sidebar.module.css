@@ -49,6 +49,10 @@
     color: var(--primary-color);
 }
 
+p.active {
+    color: var(--primary-color);
+}
+
 .sidebar svg {
     height: 25px;
     width: 25px;
