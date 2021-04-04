@@ -4,6 +4,7 @@ import styles from "./User.module.css";
 import UserHeader from "./UserHeader";
 import UserText from "./UserText";
 import Dropdown from "../Dropdown/Dropdown";
+import UserButtons from "./UserButtons";
 
 const User = () => {
   return (
@@ -16,17 +17,7 @@ const User = () => {
           <Dropdown />
         </div>
         <GridCrud />
-        <div className={styles.btnActions}>
-          <div className={styles.btnControl}>
-            <button>Salvar</button>
-            <button>Cancelar</button>
-          </div>
-          <div className={styles.btnCrud}>
-            <button className={styles.btnView}>Vizualizar</button>
-            <button className={styles.btnEdit}>Editar</button>
-            <button className={styles.btnDelete}>Excluir</button>
-          </div>
-        </div>
+        <UserButtons />
       </div>
     </div>
   );

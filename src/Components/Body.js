@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Body.module.css";
 import Sidebar from "./Sidebar";
-import User from "./UserMaintenace/User";
+import User from "./UserMaintenance/User";
 
 const Body = () => {
   return (
