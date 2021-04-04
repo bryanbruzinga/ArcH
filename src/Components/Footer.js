@@ -25,7 +25,11 @@ const Footer = () => {
         <div className={styles.contactItem}>
           <Address />
           <p>
-            <a href="https://g.page/Castelo-Branco-Office-Park-4425?share">
+            <a
+              href="https://g.page/Castelo-Branco-Office-Park-4425?share"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Av. Marcos Penteado de Ulhoa Rodrigues, 939 Torre Jacarandá - 8°
               andar - Sala 835 - Tamboré Barueri - SP
             </a>
