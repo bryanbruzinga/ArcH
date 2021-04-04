@@ -8,10 +8,14 @@
 <p align="center"><img src="./src/Assets/mainWithSidebar.png" alt="Tela com Sidebar" /></p>
 <p align="center"><i>Screenshot da tela com a barra lateral ativada.</i></p>
 
-<p>A única funcionalidade é a possibilidade de recuar a Sidebar através de um botão no canto esquerdo, achei que seria bom para caso um possível usuário necessitasse de uma vista menos poluída</p>
+<p>A única funcionalidade é a possibilidade de recuar a Sidebar através de um botão no canto esquerdo, achei que seria bom para caso um possível usuário necessitasse de uma vista menos poluída.</p>
 
 <p align="center"><img src="./src/Assets/mainScreen.png" alt="Tela sem Sidebar" /></p>
 <p align="center"><i>Screenshot da tela com a barra lateral recuada.</i></p>
+
+<p>E obviamente não pode faltar a responsividade.</p>
+<p align="center"><img src="./src/Assets/gif.gif" alt="App Mobile" /></p>
+<p align="center"><i>Execuçao do App em tamanho mobile.</i></p>
 
 <h2>Tecnologias Utilizadas</h2>
 
@@ -23,10 +27,10 @@
 <h2>Link para vizualização</h2>
 <p>O app está disponível para visualização <a href="https://arch.vercel.app/">aqui</a>.</p>
 
-<h2>Ter acesso aos arquivos do App</h2>
+<h2>Acessando os arquivos do App</h2>
 
 <p>Inicialmente deve-se clonar o repositório, após concluído, deve ter o Node instalado em sua máquina para que possa puxar os pacotes do NPM.</p>
-<p>Com o Node instalado, abra um terminal na raiz da pasta do App e execute o comando</p>
+<p>Com o Node instalado, abra um terminal na raiz da pasta do App e execute o comando:</p>
 <code>npm install</code>
 <p>Aguarde o npm puxar todos os pacotes utilizados no projeto, assim que concluir, execute o comando a seguir para rodar a aplicação.</p>
 <code>npm start</code>
