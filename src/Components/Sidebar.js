@@ -58,12 +58,12 @@ const Sidebar = () => {
           </li>
         </ul>
         <button onClick={handleClosePanel} className={styles.panelOpen}>
-          🡐
+          ←
         </button>
       </nav>
       {painelRecuado && (
         <button onClick={handleOpenPanel} className={styles.panelClosed}>
-          🡒
+          →
         </button>
       )}
     </aside>
