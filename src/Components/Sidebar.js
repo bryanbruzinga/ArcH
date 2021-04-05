@@ -34,27 +34,27 @@ const Sidebar = () => {
           </li>
           <li className={styles.listItem}>
             <Report />
-            <a href="/">
+            <Link to="/">
               <p>Relatorios administrativos</p>
-            </a>
+            </Link>
           </li>
           <li className={styles.listItem}>
             <Content />
-            <a href="/">
+            <Link to="/">
               <p>Manutenção de conteúdos</p>
-            </a>
+            </Link>
           </li>
           <li className={styles.listItem}>
             <Event />
-            <a href="/">
+            <Link to="/">
               <p>Manutenção de eventos</p>
-            </a>
+            </Link>
           </li>
           <li className={styles.listItem}>
             <Service />
-            <a href="/">
+            <Link to="/">
               <p>Manutenção de serviços</p>
-            </a>
+            </Link>
           </li>
         </ul>
         <button onClick={handleClosePanel} className={styles.panelOpen}>

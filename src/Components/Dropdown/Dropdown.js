@@ -32,7 +32,7 @@ const Dropdown = () => {
       <div className={styles.dropdownContent}>
         {enableMenu &&
           opcoes.map((item) => (
-            <Link key={item.value} href="/">
+            <Link to="/" key={item.value} href="/">
               {item.label}
             </Link>
           ))}
