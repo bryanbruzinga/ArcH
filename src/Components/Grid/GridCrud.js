@@ -1,21 +1,23 @@
-import * as React from "react";
+import React from "react";
 import { DataGrid } from "@material-ui/data-grid";
-// import styles from "./Grid.module.css";
+import { ReactComponent as View } from "../../Assets/view.svg";
+import { ReactComponent as Edit } from "../../Assets/edit.svg";
+import { ReactComponent as Delete } from "../../Assets/delete.svg";
 
 const GridCrud = () => {
   const itensColumns = [
     { field: "id", headerName: "ID", width: 70 },
-    { field: "firstName", headerName: "First name", width: 130 },
-    { field: "lastName", headerName: "Last name", width: 130 },
+    { field: "firstName", headerName: "Nome", width: 130 },
+    { field: "lastName", headerName: "Sobrenome", width: 130 },
     {
       field: "age",
-      headerName: "Age",
+      headerName: "Idade",
       type: "number",
       width: 90,
     },
     {
       field: "fullName",
-      headerName: "Full name",
+      headerName: "Nome Completo",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
       width: 160,
@@ -24,10 +26,50 @@ const GridCrud = () => {
           params.getValue("lastName") || ""
         }`,
     },
+    {
+      field: "actions",
+      headerName: "Ações",
+      width: 300,
+      renderCell: () => (
+        <div>
+          <button
+            style={{
+              marginRight: "1rem",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <View style={{ height: "20px", width: "20px" }} />
+          </button>
+          <button
+            style={{
+              marginRight: "1rem",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
+          >
+            <Edit style={{ height: "20px", width: "20px" }} />
+          </button>
+          <button
+            style={{ background: "none", border: "none", cursor: "pointer" }}
+          >
+            <Delete style={{ height: "20px", width: "20px" }} />
+          </button>
+        </div>
+      ),
+    },
   ];
 
   const itensRow = [
-    { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
+    {
+      id: 1,
+      lastName: "Snow",
+      firstName: "Jon",
+      age: 35,
+      actions: "Editar    Excluir",
+    },
     { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
     { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
     { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },

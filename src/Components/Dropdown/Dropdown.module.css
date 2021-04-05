@@ -42,8 +42,8 @@
     color: var(--secondary-color);
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 510px) {
     .dropdown {
-      margin-bottom: 2rem;
+      margin: 1rem;
     }
   }

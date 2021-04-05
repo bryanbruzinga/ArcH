@@ -28,7 +28,7 @@ const Sidebar = () => {
         <ul>
           <li className={styles.listItem}>
             <User />
-            <Link to="/pagina">
+            <Link to="/">
               <p className={styles.active}>Manutenção de usuários</p>
             </Link>
           </li>
@@ -58,12 +58,12 @@ const Sidebar = () => {
           </li>
         </ul>
         <button onClick={handleClosePanel} className={styles.panelOpen}>
-          🠔
+          🡐
         </button>
       </nav>
       {painelRecuado && (
         <button onClick={handleOpenPanel} className={styles.panelClosed}>
-          ➔
+          🡒
         </button>
       )}
     </aside>

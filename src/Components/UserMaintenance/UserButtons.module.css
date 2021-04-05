@@ -14,41 +14,20 @@
     transition: .3s;
 }
 
-.btnControl button {
+.btnActions button:not(.btnAdd) {
     background: var(--primary-color);    
 }
 
-.btnView {
+.btnAdd {
     background: green;
-}
-
-.btnEdit {
-    background: orange;
-}
-
-.btnDelete {
-    background: red;
 }
 
 .btnActions button:hover {
     filter: brightness(80%);
 }
 
-@media (max-width: 706px) {
-    .btnActions {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+@media (max-width: 420px) {
     .btnActions button {
         padding: 0.5rem 1rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .btnCrud {
-        display: flex;
-        flex-direction: column;
     }
 }

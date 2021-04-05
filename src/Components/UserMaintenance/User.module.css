@@ -41,7 +41,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 510px) {
     .crudHeader {
         display: flex;
         flex-direction: column;

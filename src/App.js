@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Body from "./Components/Body";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
-import User from "./Components/UserMaintenance/User";
 import "./global.css";
 
 function App() {
@@ -11,9 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <Body>
-          <Route path="pagina" element={<User />} />
-        </Body>
+        <Body></Body>
         <Footer />
       </BrowserRouter>
     </div>
